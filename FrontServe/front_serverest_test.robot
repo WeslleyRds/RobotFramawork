@@ -11,5 +11,5 @@ Caso de Teste 01 - Cadastro com Usuário validos
     ...              com usuários validos 
     [Tags]           login
     Dado que eu esteja no site "front.serverest"
-    Quando clico na opcao cadastro
+    Quando clico na opcao Cadastro
     Entao efetuo o cadastro
