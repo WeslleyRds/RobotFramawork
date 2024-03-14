@@ -1,108 +1,401 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-03-13T15:45:29.387881" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-03-14T14:50:58.143507" rpa="false" schemaversion="5">
 <suite id="s1" name="Front Serverest Test" source="C:\Users\Pc\Documents\curriculo\RobotFramework\FrontServe\front_serverest_test.robot">
-<test id="s1-t1" name="Caso de Teste 01 - Cadastro com Usuário validos" line="9">
+<test id="s1-t1" name="Caso de Teste 01 - Cadastro com Usuário válido" line="9">
 <kw name="Abrir o navegador" owner="front_serverest_resources" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-03-13T15:45:29.900188" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<msg time="2024-03-14T14:50:59.091972" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
 <arg>browser=chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-03-13T15:45:29.900188" elapsed="4.361029"/>
+<status status="PASS" start="2024-03-14T14:50:59.090974" elapsed="5.682558"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-03-13T15:45:34.261217" elapsed="0.166669"/>
+<status status="PASS" start="2024-03-14T14:51:04.774508" elapsed="0.350066"/>
 </kw>
-<status status="PASS" start="2024-03-13T15:45:29.884569" elapsed="4.543317"/>
+<status status="PASS" start="2024-03-14T14:50:59.088982" elapsed="6.036587"/>
 </kw>
 <kw name="Dado que eu esteja no site &quot;front.serverest&quot;" owner="front_serverest_resources">
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2024-03-13T15:45:34.427886" level="INFO">Opening url 'https://front.serverest.dev/login'</msg>
+<msg time="2024-03-14T14:51:05.130555" level="INFO">Opening url 'https://front.serverest.dev/login'</msg>
 <arg>url=${URL}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2024-03-13T15:45:34.427886" elapsed="1.881886"/>
+<status status="PASS" start="2024-03-14T14:51:05.130555" elapsed="2.006152"/>
 </kw>
 <kw name="Title Should Be" owner="SeleniumLibrary">
-<msg time="2024-03-13T15:45:36.325394" level="INFO">Page title is 'Front - ServeRest'.</msg>
+<msg time="2024-03-14T14:51:07.164633" level="INFO">Page title is 'Front - ServeRest'.</msg>
 <arg>Front - ServeRest</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<status status="PASS" start="2024-03-13T15:45:36.309772" elapsed="0.015622"/>
+<status status="PASS" start="2024-03-14T14:51:07.137705" elapsed="0.026928"/>
 </kw>
 <kw name="Capture Page Screenshot" owner="SeleniumLibrary">
-<msg time="2024-03-13T15:45:37.548255" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Site_Front_Severest.png"&gt;&lt;img src="Site_Front_Severest.png" width="800px"&gt;&lt;/a&gt;</msg>
-<arg>Site_Front_Severest.png</arg>
+<msg time="2024-03-14T14:51:09.349788" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Evid%C3%AAncias/Evidencia%2001%20-%20Site_Front_Severest.png"&gt;&lt;img src="Evid%C3%AAncias/Evidencia%2001%20-%20Site_Front_Severest.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>${EVIDENCIAS}/Evidencia 01 - Site_Front_Severest.png</arg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<status status="PASS" start="2024-03-13T15:45:36.325394" elapsed="1.222861"/>
+<status status="PASS" start="2024-03-14T14:51:07.164633" elapsed="2.186151"/>
 </kw>
-<status status="PASS" start="2024-03-13T15:45:34.427886" elapsed="3.120369"/>
+<status status="PASS" start="2024-03-14T14:51:05.129558" elapsed="4.221226"/>
 </kw>
 <kw name="Quando clico na opcao cadastro" owner="front_serverest_resources">
 <kw name="Page Should Contain Element" owner="SeleniumLibrary">
-<msg time="2024-03-13T15:45:37.583939" level="INFO">Current page contains element '//a[@data-testid='cadastrar'][contains(.,'Cadastre-se')]'.</msg>
-<arg>${BTNCADASDTRO}</arg>
+<msg time="2024-03-14T14:51:09.430573" level="INFO">Current page contains element '//a[@data-testid='cadastrar'][contains(.,'Cadastre-se')]'.</msg>
+<arg>${BTNCADASTRO}</arg>
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
-<status status="PASS" start="2024-03-13T15:45:37.548255" elapsed="0.036683"/>
+<status status="PASS" start="2024-03-14T14:51:09.371727" elapsed="0.059854"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-03-13T15:45:37.584938" level="INFO">Clicking element '//a[@data-testid='cadastrar'][contains(.,'Cadastre-se')]'.</msg>
-<arg>${BTNCADASDTRO}</arg>
+<msg time="2024-03-14T14:51:09.432565" level="INFO">Clicking element '//a[@data-testid='cadastrar'][contains(.,'Cadastre-se')]'.</msg>
+<arg>${BTNCADASTRO}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-03-13T15:45:37.584938" elapsed="0.150599"/>
+<status status="PASS" start="2024-03-14T14:51:09.431581" elapsed="0.349054"/>
 </kw>
 <kw name="Capture Page Screenshot" owner="SeleniumLibrary">
-<msg time="2024-03-13T15:45:38.126029" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Tela_De_Cadastro.png"&gt;&lt;img src="Tela_De_Cadastro.png" width="800px"&gt;&lt;/a&gt;</msg>
-<arg>Tela_De_Cadastro.png</arg>
+<msg time="2024-03-14T14:51:10.313209" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Evid%C3%AAncias/Evid%C3%AAncia%2002%20-%20Tela_De_Cadastro.png"&gt;&lt;img src="Evid%C3%AAncias/Evid%C3%AAncia%2002%20-%20Tela_De_Cadastro.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>${EVIDENCIAS}/Evidência 02 - Tela_De_Cadastro.png</arg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<status status="PASS" start="2024-03-13T15:45:37.735537" elapsed="0.390492"/>
+<status status="PASS" start="2024-03-14T14:51:09.781632" elapsed="0.531577"/>
 </kw>
-<status status="PASS" start="2024-03-13T15:45:37.548255" elapsed="0.577774"/>
+<status status="PASS" start="2024-03-14T14:51:09.370747" elapsed="0.942462"/>
 </kw>
 <kw name="Entao efetuo o cadastro" owner="front_serverest_resources">
 <kw name="Page Should Contain Element" owner="SeleniumLibrary">
-<msg time="2024-03-13T15:45:38.154961" level="INFO">Current page contains element 'nome'.</msg>
+<msg time="2024-03-14T14:51:10.349118" level="INFO">Current page contains element 'nome'.</msg>
 <arg>${CDNOME}</arg>
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
-<status status="PASS" start="2024-03-13T15:45:38.126029" elapsed="0.029931"/>
+<status status="PASS" start="2024-03-14T14:51:10.316202" elapsed="0.032916"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-03-13T15:45:38.155960" level="INFO">Typing text 'Weslley Rodrigues da Silva' into text field 'nome'.</msg>
+<msg time="2024-03-14T14:51:10.351113" level="INFO">Typing text 'QAWSilva' into text field 'nome'.</msg>
 <arg>${CDNOME}</arg>
-<arg>Weslley Rodrigues da Silva</arg>
+<arg>QAWSilva</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-03-13T15:45:38.155960" elapsed="0.239625"/>
+<status status="PASS" start="2024-03-14T14:51:10.350115" elapsed="0.335099"/>
 </kw>
 <kw name="Capture Page Screenshot" owner="SeleniumLibrary">
-<msg time="2024-03-13T15:45:38.807516" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Nome_Usuario.png"&gt;&lt;img src="Nome_Usuario.png" width="800px"&gt;&lt;/a&gt;</msg>
-<arg>Nome_Usuario.png</arg>
+<msg time="2024-03-14T14:51:11.296579" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Evid%C3%AAncias/Evid%C3%AAncia%2003%20-%20Nome_Usuario.png"&gt;&lt;img src="Evid%C3%AAncias/Evid%C3%AAncia%2003%20-%20Nome_Usuario.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>${EVIDENCIAS}/Evidência 03 - Nome_Usuario.png</arg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<status status="PASS" start="2024-03-13T15:45:38.395725" elapsed="0.411791"/>
+<status status="PASS" start="2024-03-14T14:51:10.686214" elapsed="0.611364"/>
 </kw>
-<status status="PASS" start="2024-03-13T15:45:38.126029" elapsed="0.681487"/>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-03-14T14:51:11.337469" level="INFO">Current page contains element 'email'.</msg>
+<arg>${EMAIL}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-03-14T14:51:11.297578" elapsed="0.040888"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-03-14T14:51:11.339464" level="INFO">Typing text 'cong4776@uorak.com' into text field 'email'.</msg>
+<arg>${EMAIL}</arg>
+<arg>cong4776@uorak.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-14T14:51:11.338466" elapsed="0.731045"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-03-14T14:51:12.653948" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Evid%C3%AAncias/Evid%C3%AAncia%2004%20-%20Email_inserido.png"&gt;&lt;img src="Evid%C3%AAncias/Evid%C3%AAncia%2004%20-%20Email_inserido.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>${EVIDENCIAS}/Evidência 04 - Email_inserido.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-03-14T14:51:12.070509" elapsed="0.583439"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-03-14T14:51:12.679878" level="INFO">Current page contains element 'password'.</msg>
+<arg>${PASSWORD}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-03-14T14:51:12.654946" elapsed="0.025930"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-03-14T14:51:12.681874" level="INFO">Typing text 'Ak47007@' into text field 'password'.</msg>
+<arg>${PASSWORD}</arg>
+<arg>Ak47007@</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-14T14:51:12.680876" elapsed="0.402922"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-03-14T14:51:13.673222" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Evid%C3%AAncias/Evid%C3%AAncia%2005%20-%20Senha_inserida.png"&gt;&lt;img src="Evid%C3%AAncias/Evid%C3%AAncia%2005%20-%20Senha_inserida.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>${EVIDENCIAS}/Evidência 05 - Senha_inserida.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-03-14T14:51:13.084796" elapsed="0.588426"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-03-14T14:51:13.710125" level="INFO">Current page contains element '//button[@data-testid='cadastrar'][contains(.,'Cadastrar')]'.</msg>
+<arg>${BTCADASTRAR}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-03-14T14:51:13.674245" elapsed="0.036878"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-03-14T14:51:13.713121" level="INFO">Clicking button '//button[@data-testid='cadastrar'][contains(.,'Cadastrar')]'.</msg>
+<arg>${BTCADASTRAR}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-14T14:51:13.712120" elapsed="0.223402"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-03-14T14:51:16.937976" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-03-14T14:51:13.936517" elapsed="3.001459"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-03-14T14:51:17.416605" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Evid%C3%AAncias/Evid%C3%AAncia%2006%20-%20Usu%C3%A1rio_Cadastrado.png"&gt;&lt;img src="Evid%C3%AAncias/Evid%C3%AAncia%2006%20-%20Usu%C3%A1rio_Cadastrado.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>${EVIDENCIAS}/Evidência 06 - Usuário_Cadastrado.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-03-14T14:51:16.938970" elapsed="0.477635"/>
+</kw>
+<status status="PASS" start="2024-03-14T14:51:10.315204" elapsed="7.101401"/>
 </kw>
 <kw name="Fechar o navegador" owner="front_serverest_resources" type="TEARDOWN">
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-03-13T15:45:38.807516" elapsed="3.522390"/>
+<status status="PASS" start="2024-03-14T14:51:17.417602" elapsed="3.854616"/>
 </kw>
-<status status="PASS" start="2024-03-13T15:45:38.807516" elapsed="3.522390"/>
+<status status="PASS" start="2024-03-14T14:51:17.417602" elapsed="3.855618"/>
+</kw>
+<doc>Esse teste valida o cadastro no site do https://front.serverest.dev/
+com usuários validos</doc>
+<tag>Cadastro</tag>
+<status status="PASS" start="2024-03-14T14:50:59.079004" elapsed="22.197197"/>
+</test>
+<test id="s1-t2" name="Caso de Teste 02 - Login com Usuário válido" line="17">
+<kw name="Abrir o navegador" owner="front_serverest_resources" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-03-14T14:51:21.280191" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-03-14T14:51:21.280191" elapsed="4.370650"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-03-14T14:51:25.650841" elapsed="0.475726"/>
+</kw>
+<status status="PASS" start="2024-03-14T14:51:21.280191" elapsed="4.846376"/>
+</kw>
+<kw name="Dado que eu esteja no site &quot;front.serverest&quot;" owner="front_serverest_resources">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-03-14T14:51:26.183417" level="INFO">Opening url 'https://front.serverest.dev/login'</msg>
+<arg>url=${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-03-14T14:51:26.182419" elapsed="2.111088"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2024-03-14T14:51:28.304481" level="INFO">Page title is 'Front - ServeRest'.</msg>
+<arg>Front - ServeRest</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2024-03-14T14:51:28.293507" elapsed="0.011973"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-03-14T14:51:29.991528" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Evid%C3%AAncias/Evidencia%2001%20-%20Site_Front_Severest.png"&gt;&lt;img src="Evid%C3%AAncias/Evidencia%2001%20-%20Site_Front_Severest.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>${EVIDENCIAS}/Evidencia 01 - Site_Front_Severest.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-03-14T14:51:28.306476" elapsed="1.685052"/>
+</kw>
+<status status="PASS" start="2024-03-14T14:51:26.181420" elapsed="3.810108"/>
+</kw>
+<kw name="Quando efetuo o login com usuário válido" owner="front_serverest_resources">
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-03-14T14:51:30.082285" level="INFO">Current page contains element 'email'.</msg>
+<arg>${EMAIL}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-03-14T14:51:30.001510" elapsed="0.081773"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-03-14T14:51:30.084289" level="INFO">Typing text 'cong4776@uorak.com' into text field 'email'.</msg>
+<arg>${EMAIL}</arg>
+<arg>cong4776@uorak.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-14T14:51:30.083283" elapsed="0.379988"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-03-14T14:51:31.039727" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Evid%C3%AAncias/Evid%C3%AAncia%2007%20-%20Email_inserido.png"&gt;&lt;img src="Evid%C3%AAncias/Evid%C3%AAncia%2007%20-%20Email_inserido.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>${EVIDENCIAS}/Evidência 07 - Email_inserido.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-03-14T14:51:30.464264" elapsed="0.576462"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-03-14T14:51:31.075626" level="INFO">Current page contains element 'password'.</msg>
+<arg>${PASSWORD}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-03-14T14:51:31.040726" elapsed="0.035898"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-03-14T14:51:31.076624" level="INFO">Typing text 'Ak47007@' into text field 'password'.</msg>
+<arg>${PASSWORD}</arg>
+<arg>Ak47007@</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-14T14:51:31.076624" elapsed="0.270277"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-03-14T14:51:31.916378" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Evid%C3%AAncias/Evid%C3%AAncia%2008%20-%20Senha_inserida.png"&gt;&lt;img src="Evid%C3%AAncias/Evid%C3%AAncia%2008%20-%20Senha_inserida.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>${EVIDENCIAS}/Evidência 08 - Senha_inserida.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-03-14T14:51:31.346901" elapsed="0.569477"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-03-14T14:51:31.918380" level="INFO">Clicking button '//button[@data-testid='entrar'][contains(.,'Entrar')]'.</msg>
+<arg>${BTNENTRAR}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-14T14:51:31.917376" elapsed="0.265294"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-03-14T14:51:35.185074" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-03-14T14:51:32.183670" elapsed="3.001404"/>
+</kw>
+<status status="PASS" start="2024-03-14T14:51:30.000503" elapsed="5.184571"/>
+</kw>
+<kw name="Entao devo ser redirecionado para a pagina de produtos" owner="front_serverest_resources">
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-03-14T14:51:35.203027" level="INFO">Current page contains element '//h1[contains(.,'Serverest Store')]'.</msg>
+<arg>${TELA_PRODUTO}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-03-14T14:51:35.187083" elapsed="0.016940"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-03-14T14:51:35.652847" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Evid%C3%AAncias/Evid%C3%AAncia%2009%20-%20Usu%C3%A1rio_logado.png"&gt;&lt;img src="Evid%C3%AAncias/Evid%C3%AAncia%2009%20-%20Usu%C3%A1rio_logado.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>${EVIDENCIAS}/Evidência 09 - Usuário_logado.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-03-14T14:51:35.204023" elapsed="0.450830"/>
+</kw>
+<status status="PASS" start="2024-03-14T14:51:35.186074" elapsed="0.470770"/>
+</kw>
+<kw name="Fechar o navegador" owner="front_serverest_resources" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-03-14T14:51:35.667808" elapsed="5.024196"/>
+</kw>
+<status status="PASS" start="2024-03-14T14:51:35.666811" elapsed="5.026196"/>
 </kw>
 <doc>Esse teste valida o login no site do https://front.serverest.dev/
-com usuários validos</doc>
-<tag>login</tag>
-<status status="PASS" start="2024-03-13T15:45:29.884569" elapsed="12.445337"/>
+com usuários valido</doc>
+<tag>Login</tag>
+<status status="PASS" start="2024-03-14T14:51:21.278194" elapsed="19.415808"/>
+</test>
+<test id="s1-t3" name="Caso de Teste 03 - Login com Usuário inválido" line="25">
+<kw name="Abrir o navegador" owner="front_serverest_resources" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-03-14T14:51:40.702976" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-03-14T14:51:40.702976" elapsed="5.166252"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-03-14T14:51:45.870222" elapsed="0.285241"/>
+</kw>
+<status status="PASS" start="2024-03-14T14:51:40.701980" elapsed="5.453483"/>
+</kw>
+<kw name="Dado que eu esteja no site &quot;front.serverest&quot;" owner="front_serverest_resources">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-03-14T14:51:46.172419" level="INFO">Opening url 'https://front.serverest.dev/login'</msg>
+<arg>url=${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-03-14T14:51:46.171427" elapsed="19.738439"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2024-03-14T14:52:05.922833" level="INFO">Page title is 'Front - ServeRest'.</msg>
+<arg>Front - ServeRest</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2024-03-14T14:52:05.911861" elapsed="0.010972"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-03-14T14:52:07.976905" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Evid%C3%AAncias/Evidencia%2001%20-%20Site_Front_Severest.png"&gt;&lt;img src="Evid%C3%AAncias/Evidencia%2001%20-%20Site_Front_Severest.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>${EVIDENCIAS}/Evidencia 01 - Site_Front_Severest.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-03-14T14:52:05.923832" elapsed="2.054054"/>
+</kw>
+<status status="PASS" start="2024-03-14T14:51:46.170422" elapsed="21.807464"/>
+</kw>
+<kw name="Quando efetuo o login com usuário inválido" owner="front_serverest_resources">
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-03-14T14:52:08.071748" level="INFO">Current page contains element 'email'.</msg>
+<arg>${EMAIL}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-03-14T14:52:07.996834" elapsed="0.074914"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-03-14T14:52:08.072747" level="INFO">Typing text 'qtesasds@gmai.com' into text field 'email'.</msg>
+<arg>${EMAIL}</arg>
+<arg>qtesasds@gmai.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-14T14:52:08.071748" elapsed="0.461554"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-03-14T14:52:09.054906" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Evid%C3%AAncias/Evid%C3%AAncia%2010%20-%20Email_inserido.png"&gt;&lt;img src="Evid%C3%AAncias/Evid%C3%AAncia%2010%20-%20Email_inserido.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>${EVIDENCIAS}/Evidência 10 - Email_inserido.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-03-14T14:52:08.533302" elapsed="0.521604"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-03-14T14:52:09.098794" level="INFO">Current page contains element 'password'.</msg>
+<arg>${PASSWORD}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-03-14T14:52:09.054906" elapsed="0.044886"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-03-14T14:52:09.099792" level="INFO">Typing text 'Ak47007@' into text field 'password'.</msg>
+<arg>${PASSWORD}</arg>
+<arg>Ak47007@</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-14T14:52:09.099792" elapsed="0.406754"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-03-14T14:52:10.070038" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Evid%C3%AAncias/Evid%C3%AAncia%2011%20-%20Senha_inserida.png"&gt;&lt;img src="Evid%C3%AAncias/Evid%C3%AAncia%2011%20-%20Senha_inserida.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>${EVIDENCIAS}/Evidência 11 - Senha_inserida.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-03-14T14:52:09.507544" elapsed="0.562494"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-03-14T14:52:10.071036" level="INFO">Clicking button '//button[@data-testid='entrar'][contains(.,'Entrar')]'.</msg>
+<arg>${BTNENTRAR}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-14T14:52:10.070038" elapsed="0.193862"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-03-14T14:52:13.264796" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-03-14T14:52:10.263900" elapsed="3.000896"/>
+</kw>
+<status status="PASS" start="2024-03-14T14:52:07.991866" elapsed="5.272930"/>
+</kw>
+<kw name="Entao uma mensagem de erro deve ser exibida" owner="front_serverest_resources">
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-03-14T14:52:13.298707" level="INFO">Current page contains element '//div[@class='alert alert-secondary alert-dismissible'][contains(.,'×Email e/ou senha inválidos')]'.</msg>
+<arg>${SENHA_INVALIDA}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-03-14T14:52:13.269796" elapsed="0.028911"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-03-14T14:52:13.779541" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Evid%C3%AAncias/Evid%C3%AAncia%2012%20-%20Mensagem_erro.png"&gt;&lt;img src="Evid%C3%AAncias/Evid%C3%AAncia%2012%20-%20Mensagem_erro.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>${EVIDENCIAS}/Evidência 12 - Mensagem_erro.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-03-14T14:52:13.298707" elapsed="0.480834"/>
+</kw>
+<status status="PASS" start="2024-03-14T14:52:13.268786" elapsed="0.511754"/>
+</kw>
+<kw name="Fechar o navegador" owner="front_serverest_resources" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-03-14T14:52:13.786527" elapsed="3.401591"/>
+</kw>
+<status status="PASS" start="2024-03-14T14:52:13.786527" elapsed="3.401591"/>
+</kw>
+<doc>Esse teste valida o login no site do https://front.serverest.dev/
+com usuários invalidos</doc>
+<tag>Login</tag>
+<status status="PASS" start="2024-03-14T14:51:40.699984" elapsed="36.489132"/>
 </test>
 <doc>Essa suíte testes o site da https://front.serverest.dev/</doc>
-<status status="PASS" start="2024-03-13T15:45:29.387881" elapsed="12.942025"/>
+<status status="PASS" start="2024-03-14T14:50:58.146498" elapsed="79.044613"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="1" fail="0" skip="0">login</stat>
+<stat pass="1" fail="0" skip="0">Cadastro</stat>
+<stat pass="2" fail="0" skip="0">Login</stat>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Front Serverest Test">Front Serverest Test</stat>
+<stat pass="3" fail="0" skip="0" id="s1" name="Front Serverest Test">Front Serverest Test</stat>
 </suite>
 </statistics>
 <errors>
